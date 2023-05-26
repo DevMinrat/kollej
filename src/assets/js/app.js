@@ -111,27 +111,39 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     },
   });
-});
 
-const dropdowns = document.querySelectorAll(".dropdown-container");
+  const dropdowns = document.querySelectorAll(".dropdown-container");
 
-if (dropdowns.length) {
-  dropdowns.forEach((el, i) => {
-    const dropdownLink = el.querySelector(".dropdown-link");
-    const dropdownList = el.querySelector(".dropdown-list");
+  if (dropdowns.length) {
+    dropdowns.forEach((el, i) => {
+      const dropdownLink = el.querySelector(".dropdown-link");
+      const dropdownList = el.querySelector(".dropdown-list");
 
-    if (el.classList.contains("active")) {
-      dropdownList.style.maxHeight = dropdownList.scrollHeight + "px";
-    }
-
-    dropdownLink.addEventListener("click", function () {
-      el.classList.toggle("active");
-
-      if (dropdownList.style.maxHeight) {
-        dropdownList.style.maxHeight = null;
-      } else {
+      if (el.classList.contains("active")) {
         dropdownList.style.maxHeight = dropdownList.scrollHeight + "px";
       }
+
+      dropdownLink.addEventListener("click", function () {
+        el.classList.toggle("active");
+
+        if (dropdownList.style.maxHeight) {
+          dropdownList.style.maxHeight = null;
+        } else {
+          dropdownList.style.maxHeight = dropdownList.scrollHeight + "px";
+        }
+      });
     });
+  }
+
+  let logisticsSlider = new Swiper(".logistics-slider", {
+    slidesPerView: 1,
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+    navigation: {
+      nextEl: ".logistics-slider .main-branch__arrowRight",
+      prevEl: ".logistics-slider .main-branch__arrowLeft",
+    },
   });
-}
+});

@@ -1,0 +1,22 @@
+.financial-info {
+  width: 100%;
+
+  .dropdown-link {
+    font-weight: 500;
+    font-size: 2.4rem;
+  }
+
+  .links-table__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .financial-info__data {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+
+    margin: 4rem 0;
+  }
+}
