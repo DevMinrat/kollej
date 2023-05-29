@@ -1,0 +1,65 @@
+.education {
+  .dropdown-container.filled {
+    padding: 2rem 2rem 0 2rem;
+    margin-bottom: 2rem;
+
+    background: #ebedf1;
+    border-radius: 1rem;
+
+    &.active {
+      padding-bottom: 2rem;
+    }
+
+    .dropdown-list {
+      padding-top: 2rem;
+    }
+
+    // .dropdown-link {
+    //   margin-bottom: 3rem;
+    // }
+  }
+}
+
+.education-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  margin-bottom: 4rem;
+
+  a {
+    display: inline-block;
+
+    text-decoration: none;
+    color: #36456f;
+  }
+}
+.education-info__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: calc(41.5rem - 1.3333rem);
+
+  height: 22.6rem;
+
+  padding: 2rem;
+
+  background: #ebedf1;
+  border-radius: 1rem;
+}
+.education-info__item-title {
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  color: #000015;
+}
+.education-info__item-descr {
+  font-size: 1.8rem;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  color: #000015;
+}
