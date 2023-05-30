@@ -60,6 +60,13 @@
       padding-left: 2rem;
     }
   }
+
+  .gallery-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+  }
 }
 
 .page-title {

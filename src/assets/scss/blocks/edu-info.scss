@@ -10,22 +10,30 @@ table {
 
     background: #ebedf1;
     border-radius: 1rem 1rem 0 0;
+  }
 
-    th {
-      align-items: center;
+  tbody {
+    th:not(:last-child) {
+      border-bottom: 0.1rem solid #ffffff;
+    }
+  }
 
-      font-weight: 500;
-      text-align: left;
+  th {
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: left;
 
-      padding: 1.2rem 1.5rem;
+    padding: 1.2rem 1.5rem;
 
-      &:first-child {
-        border-left: 0.1rem solid #ebedf1;
-      }
+    background: #ebedf1;
 
-      &:not(:last-child) {
-        border-right: 0.1rem solid #ffffff;
-      }
+    &:first-child {
+      border-left: 0.1rem solid #ebedf1;
+    }
+
+    &:not(:last-child) {
+      border-right: 0.1rem solid #ffffff;
     }
   }
 
