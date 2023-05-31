@@ -67,6 +67,14 @@
     gap: 2rem;
     align-items: flex-start;
   }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    margin-bottom: 10rem;
+  }
 }
 
 .page-title {
